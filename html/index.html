@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="spac.css">
+</head>
+
+<body>
+<!-- LAYOUT -->
+<div id="titleBar"></div>
+<div id="toolBar"></div>
+<div id="statusBar"></div>
+<div id="debugBar"></div>
+<div id="content"></div>
+
+<script src="handlebars.js"></script>
+<script src="spac.js"></script>
+<script> 
+	window.app.addAction('other');
+	window.app.addAction('hbs', 'hbs-dynamic');
+	window.app.addAction('static-example', 'hbs-static');
+	window.app.addAction('spac-test', 'test');
+	window.app.init('main'); 
+</script>
+
+</body>
+
+</html>

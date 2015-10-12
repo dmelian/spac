@@ -1,0 +1,71 @@
+/* file: dialog.less */
+
+/*TODO: PONERLE ALGUN BORDE O SOMBRITA AL DIALOGO*/
+
+/* Lock the current page for displaying the dialog in modal form */
+.dlg-lock-page { 
+	background-color: black;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+}
+
+/* It is the parent of the dialog container, and has all the window size
+, for center the dialog horizontally*/
+.dlg-window-size { 
+	position: absolute;
+	left: 0px; top: 0px;
+	width: 100%; height: 100%;
+}
+
+.dlg-container {
+	background-color: white;
+
+	position: relative;
+	width: 500px;
+	height: 200px;
+	margin: auto;
+	top: 80px; /*TODO: Recalculate by js*/
+}
+
+.dlg-header {
+	background-color: @title-bgcolor;
+	color: @title-color;
+
+	position: absolute;
+	width: 100%;
+	height: 25px;
+	top: 0px;
+	padding: 5px 0px 0px 5px;
+	overflow: hidden;
+}
+
+.dlg-content {
+	background-color: @content-bgcolor;
+	color: @content-color;
+
+	position: absolute;
+	width: 100%;
+	top: 30px;
+	bottom: 30px;
+	overflow:auto;
+	padding: 5px 0px 0px 5px;
+}
+
+.dlg-footer{
+	background-color: @panel-bgcolor;
+	color: @panel-color;
+
+	position: absolute;
+	width: 100%;
+	height: 25px;
+	bottom: 0px;
+	padding: 5px 5px 0px 0px;
+}
+
+.dlg-footer button{
+	float: right;
+}

@@ -1,0 +1,10 @@
+<h1>Dynamic content</h1>
+<p>This is a dynamic page</p>
+<p>The content of this page has been created by a program.
+It isn't static.</p>
+<ol>
+{{#posts}}
+	<li>{{date}} - <b>{{title}}</b> by {{author}}</li>
+{{/posts}}
+</ol>
+
